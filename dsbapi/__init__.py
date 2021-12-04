@@ -1,4 +1,4 @@
-from typing import Final, Iterable
+from typing import Final, Iterable, List
 import json
 import requests
 import datetime
@@ -10,7 +10,7 @@ import bs4
 
 NONE_CASES: Final = ('\xa0', '+', '---')
 
-DEFAULT_MAPPER: Final[list[str]] = ['type', 'class', 'lesson','subject', 'room',
+DEFAULT_MAPPER: Final[List[str]] = ['type', 'class', 'lesson','subject', 'room',
                                     'new_subject', 'new_teacher', 'teacher']
 
 
